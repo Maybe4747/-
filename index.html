@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">首页</a></li>
+          <li><a href="#projects">练习</a></li>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#hobbies">爱好</a></li>
+          <li><a href="#contact">联系</a></li>
+          <li><a href="blog.html">博客</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <h1 class="animate-fade-in">欢迎来到我的个人博客</h1>
+          <p class="animate-fade-in">探索、创造、分享</p>
+          <a href="#projects" class="cta-button animate-pulse">查看我的练习</a>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>我的练习</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <img src="./images/houtai.png" alt="通用后台管理系统" />
+              <h3>通用后台管理系统</h3>
+              <p>基于react、antd、redux的通用后台管理系统</p>
+            </div>
+            <div class="project-card">
+              <img src="./images/dds.png" alt="打地鼠游戏" />
+              <h3>打地鼠游戏</h3>
+              <p>三件套小游戏</p>
+            </div>
+            <div class="project-card">
+              <img src="./images/jzq.png" alt="井字棋游戏" />
+              <h3>井字棋游戏</h3>
+              <p>基于react的小游戏</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>关于我</h2>
+          <div class="about-content">
+            <img
+              src="./images/personal.JPG"
+              alt="个人照片"
+              class="profile-image animate-float"
+            />
+            <div class="about-text">
+              <p>
+                你好！我是一名充满热情的前端开发者，专注于创造有意义的数字体验。我热爱将创意转化为代码，并不断探索新技术的可能性。
+              </p>
+              <p>
+                个人的技术笔记，把学到的知识记录下来，分享给大家，希望能帮助到大家。
+              </p>
+              <p>
+                在我的学习中，我一直坚持着“学习的乐趣”和“分享的精神”。我喜欢分享自己的知识和经验，帮助他人解决问题，并与他人一起进步。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies">
+        <div class="container">
+          <h2>我的爱好</h2>
+          <div class="hobby-grid">
+            <div class="hobby-card">
+              <i class="fas fa-camera"></i>
+              <h3>摄影</h3>
+              <p>捕捉生活中的美好瞬间</p>
+            </div>
+            <div class="hobby-card">
+              <i class="fas fa-globe"></i>
+              <h3>旅行</h3>
+              <p>体验各地的文化与风景</p>
+            </div>
+            <div class="hobby-card">
+              <i class="fas fa-utensils"></i>
+              <h3>追剧</h3>
+              <p>透过电影的魅力，感受生活的美好</p>
+            </div>
+            <div class="hobby-card">
+              <i class="fas fa-book"></i>
+              <h3>阅读</h3>
+              <p>汲取知识，开拓视野</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>联系我</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">姓名</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">邮箱</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">留言</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">发送留言</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> 我的个人博客.</p>
+      </div>
+    </footer>
+  </body>
+</html>
